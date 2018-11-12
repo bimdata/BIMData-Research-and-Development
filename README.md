@@ -5,6 +5,7 @@
 
 ---
 
+* [IFC](#ifc)
 * [BIMData IFC Engine](#bimdata-ifc-engine)
 * [BIMData Checker](#bimdata-checker)
 	* [BVH Tree for Spatial Querying](./pages/OBB_BVH_Tree.md)
@@ -15,6 +16,18 @@
 	* [IFC Files](./pages/IFC_FILES.md)
 
 ---
+
+|**R&D Developments**|**Timeline**|
+|:-----|-----:|
+| The R&D efforts at BIMData are oriented towards the handling of BIM  <br>assets in an efficient manner. TO FINISH | ...<br>IFC Optimization - Duplicate geometries<br>GLTF Optimization - Duplicate data&geometries<br>IFC Optimisation - Duplicate instances<br>Export in the BIMData IFC Engine<br>BIMData IFC Engine development<br>**2018**<br>Start of quantities calculation and OBBs/BVH <br>Implementation of the BIMData Checker<br>GLTF and SVG conversion<br>Start of the BIMData IFC Engine development<br>**2017** |
+
+
+### IFC
+
+The Industry Foundation Classes (IFC) standard from [buildingsmart](http://www
+.buildingsmart-tech.org/specifications/ifc-overview) is at the core of our
+R&D. We use IFC files as a starting point for all the tools that we develop at
+BIMData.
 
 ### BIMData IFC Engine
 
