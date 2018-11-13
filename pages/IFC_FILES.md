@@ -1,6 +1,7 @@
-# IFC Files
+# [BIMData R&D](../README.md) - IFC Files
 
-Various models coming from different sources:
+To conduct and test our researches we collected a set of 34 BIM models.
+Those models come from different sources:
 
 * http://openifcmodel.cs.auckland.ac.nz/Model/Download
 * https://github.com/openBIMstandards/DataSetSchependomlaan/releases
@@ -8,13 +9,21 @@ Various models coming from different sources:
 * https://www.nibs.org/page/bsa_commonbimfiles
 * http://duraark.eu/data-repository/
 * http://www.markusplassen.no/?p=987
+
 <!---
 * (https://bimvision.eu/en/download/) ?
 --->
 
+They consist of 73 IFC files of different types (Architecture, Plumbing,
+etc..). Below you will find a sorted list of the IFC files with corresponding
+download links to the source files. For now the images are screenshots from
+the [glTF Viewer](https://gltf-viewer.donmccurdy.com/), in the future they
+will be pictures from the BIMData Viewer. No image means we haven't succeeded
+to convert to GLTF. If not explicitly defined the files are in the IFC2X3
+schema and Architectural. We use a naming convention to explicit the type of
+BIM asset, you will find a [list of abbreviations](#list-of-abbreviations) at
+the end of this page.
 
-The files in this dataset have been selected so that there are no duplicate
-models nor duplicate versions of those models.
 
 |Images|Files|Size<br>(MB)|    |
 |----|:----|:----:|:----:|
@@ -28,6 +37,7 @@ models nor duplicate versions of those models.
 |<img src="../assets/screenshots/Trapelo_IFC2X3_ARC.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Trapelo_IFC2X3_MEP.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Trapelo_IFC2X3_STR.png" width="230" height="136" border="0"/> | **Trapelo** <br> Trapelo_IFC2X3_ARC.ifc <br> Trapelo_IFC2X3_MEP.ifc <br> Trapelo_IFC2X3_STR.ifc  <br> Trapelo_IFC4_ARC.ifc <br> Trapelo_IFC4_MEP.ifc <br> Trapelo_IFC4_STR.ifc | <br> 27.2 <br> 65.3 <br> 3.6 <br> 22.4 <br> 67.8 <br> 3.5 | <br>  [source](http://openifcmodel.cs.auckland.ac.nz/Model/Details/302) <br>  <br>  <br> [source](http://openifcmodel.cs.auckland.ac.nz/Model/Details/303) |
 |<img src="../assets/screenshots/NBU_OfficeBuilding_Arch.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NBU_OfficeBuilding_MEP.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NBU_OfficeBuilding_HVAC.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NBU_OfficeBuilding_ELE.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NBU_OfficeBuilding_Struct.png" width="230" height="136" border="0"/> | **NBU_OfficeBuilding** <br> NBU_OfficeBuilding_Arch.ifc <br> NBU_OfficeBuilding_MEP.ifc <br> NBU_OfficeBuilding_HVAC.ifc <br> NBU_OfficeBuilding_ELE.ifc <br> NBU_OfficeBuilding_Struct.ifc  | **91.6** <br> 4.1 <br> 4.1 <br> 65.8 <br> 6.5 <br> 11.1 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/NBU_MedicalClinic_ifc.zip) |
 |<img src="../assets/screenshots/SGD_HiTOS_Arch.png" width="230" height="136" border="0"/><img src="../assets/screenshots/SGD_HiTOS_ELE.png" width="230" height="136" border="0"/><img src="../assets/screenshots/SGD_HiTOS_HVAC.png" width="230" height="136" border="0"/> | **SGD_HiTOS** <br> SGD_HiTOS_Arch.ifc <br> SGD_HiTOS_ELE.ifc <br> SGD_HiTOS_HVAC.ifc | **78.9** <br> 52.9 <br> 7.5 <br> 18.5 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/SGD_HiTOS_ifc.zip) |
+|<img src="../assets/screenshots/Hospital_IFC2X3_ELE.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Hospital_IFC2X3_FIRE.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Hospital_IFC2X3_PLB.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Hospital_IFC2X3_SPR.png" width="230" height="136" border="0"/><img src="../assets/screenshots/Hospital_IFC2X3_STR.png" width="230" height="136" border="0"/> | **Hospital** <br> Hospital_IFC2X3_ELE.ifc <br> Hospital_IFC2X3_FIRE.ifc <br> Hospital_IFC2X3_PLB.ifc <br> Hospital_IFC2X3_SPR.ifc <br> Hospital_IFC2X3_STR.ifc <br> Hospital_IFC4_ELE.ifc <br> Hospital_IFC4_FIRE.ifc <br> Hospital_IFC4_PLB.ifc <br> Hospital_IFC4_SPR.ifc <br> Hospital_IFC4_STR.ifc  | <br> 4.7 <br> 0.9 <br> 25.0 <br> 35.7 <br> 6.4 <br> 4.4 <br> 0.9 <br> 23.8 <br> 34.0 <br> 6.5 | [source](http://openifcmodel.cs.auckland.ac.nz/Model/Details/305)<br><br><br><br>[source](http://openifcmodel.cs.auckland.ac.nz/Model/Details/308) |
 |<img src="../assets/screenshots/OTC_ConfCenter_IFC4.png" width="515" height="272" border="0"/> | **OTC_ConfCenter** <br> OTC_ConfCenter_IFC4.ifc <br> OTC_ConfCenter_IFC2X3.ifc |  <br> 71.7 <br> 70.3 | <br> [source](http://openifcmodel.cs.auckland.ac.nz/_models/20160125OTC-Conference%20Center%20-%20IFC4.ifc) <br> [source](http://openifcmodel.cs.auckland.ac.nz/_models/20160124OTC-Conference%20Center.ifc) |
 |<img src="../assets/screenshots/NVW_DCR_LOD200_ARC.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NVW_DCR_LOD200_STR.png" width="230" height="136" border="0"/><img src="../assets/screenshots/NVW_DCR_LOD200_HVAC.png" width="230" height="136" border="0"/> | **NVW_DCR_LOD200** <br> NVW_DCR_LOD200_ARC.ifc <br> NVW_DCR_LOD200_STR.ifc <br> NVW_DCR_LOD200_HVAC.ifc | **67.9** <br> 25.3 <br> 9.4 <br> 33.2 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/NVW_DCR-LOD_ifc.zip) |
 |<img src="../assets/screenshots/SGD_BARD_Arch.png" width="230" height="136" border="0"/><img src="../assets/screenshots/SGD_BARD_Merged.png" width="230" height="136" border="0"/> | **SGD_BARD** <br> SGD_BARD_Arch.ifc <br> SGD_BARD_Merged.ifc | **55.3** <br> 11.5 <br> 43.8 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/SGD_BARD_ifc.zip) |
@@ -42,6 +52,7 @@ models nor duplicate versions of those models.
 |<img src="../assets/screenshots/FZK_HausNem.png" width="515" height="272" border="0"/> | **FZK_HausNem** <br> FZK_HausNem.ifc | **10.4** <br> 10.4 | [source]() |
 |<img src="../assets/screenshots/FZK_HausEliteCAD.png" width="515" height="272" border="0"/> | **FZK_HausEliteCAD** <br> FZK_HausEliteCAD.ifc | **7.4** <br> 7.4 | [source]() |
 |<img src="../assets/screenshots/Autodesk_Basic.png" width="515" height="272" border="0"/> | **Autodesk_Basic** <br> Autodesk_Basic.ifc | **5.4** <br> 5.4 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/Academic_Autodesk_ifc.zip) |
+|<img src="../assets/screenshots/HospitalGarage_IFC4.png" width="515" height="272" border="0"/> | **HospitalGarage** <br> HospitalGarage_IFC4.ifc <br> HospitalGarage_IFC2X3.ifc |  <br> 6.5 <br> 6.4 | <br> [source](http://openifcmodel.cs.auckland.ac.nz/_models/20160125Autodesk_Hospital_Parking%20Garage_2015%20-%20IFC4.ifc) <br> [source](http://openifcmodel.cs.auckland.ac.nz/_models/20160125Autodesk_Hospital_Parking%20Garage_2015.ifc) |
 |<img src="../assets/screenshots/FZK_Haus.png" width="515" height="272" border="0"/> | **FZK_Haus** <br> FZK_Haus.ifc | **4.1** <br> 4.1 | [source](http://openifcmodel.cs.auckland.ac.nz/_models/231110AC11-FZK-Haus-IFC.ifc) |
 |<img src="../assets/screenshots/KIT_SmileyWest.png" width="515" height="272" border="0"/> | **KIT_SmileyWest** <br> KIT_SmileyWest.ifc | **3.4** <br> 3.4 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/KIT_Smiley-West_ifc.zip) |
 |<img src="../assets/screenshots/KIT_Institute.png" width="515" height="272" border="0"/> | **KIT_Institute** <br> KIT_Institute.ifc | **2.8** <br> 2.8 | [source](https://tib.eu/data/duraark/BuildingData/01_IFC/KIT_Institute_ifc.zip) |
@@ -51,5 +62,15 @@ models nor duplicate versions of those models.
 
 
 
+### List of abbreviations
 
-
+**ARC** : Architecture <br>
+**STR** : Structure <br>
+**HEAT** : Heating <br>
+**VENT** : Venting <br>
+**HVAC** : Heating, Ventilating, and Air Conditioning <br>
+**ELE** : Electrical <br>
+**PLB** : Plumbing <br>
+**MEP** : Mechanical Electrical Plumbing <br>
+**FIRE**: Fire <br>
+**SPR** : Sprinkle <br>
